@@ -1,0 +1,23 @@
+<table class="beers">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th class="space">Description</th>
+        <th class="space">Price</th>
+        <th class="space">Stock</th>
+        <th class="space">Add/Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let beer of arrBeers">
+        <td>{{beer.name}}</td>
+        <td class="space">{{beer.description}}</td>
+        <td class="space">${{beer.price}}</td>
+        <td class="space">{{beer.stock}}</td>
+        <td class="space">
+          <button (click)="addBeer(beer)" class="btn-table">+</button>
+          <button (click)="removeBeer(beer)"class="btn-table">-</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
