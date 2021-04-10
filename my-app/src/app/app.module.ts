@@ -11,6 +11,7 @@ import { ContainerBeersCartComponent } from './container-beers-cart/container-be
 import { RequestsService } from './requests.service';
 import { SalesComponent } from './sales/sales.component';
 import { PhotosComponent } from './photos/photos.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PhotosComponent } from './photos/photos.component';
     CartComponent,
     ContainerBeersCartComponent,
     SalesComponent,
-    PhotosComponent
+    PhotosComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,

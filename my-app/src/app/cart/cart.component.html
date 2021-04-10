@@ -1,11 +1,13 @@
 <div class="container">
     <h2>Cart</h2>
     <label for="nombre">Name:</label>
-    <input type="text" name="name" id="name" #name>
+    <input type="text" name="name" id="name" #name required>
+    <p #pname></p>
     <label for="direccion">Address:</label>
-    <input type="text" name="address" id="address" #address>
+    <input type="text" name="address" id="address" #address required>
+    <p #paddress></p>
     <ul class="lista">
-        <li *ngFor="let beer of arrBeers">{{beer.item.name}},{{beer.quantity}},${{beer.totalPrice}}</li>
+        <li *ngFor="let beer of arrBeers">{{beer.item.name}}x{{beer.quantity}} ${{beer.totalPrice}}</li>
     </ul>
-    <button (click)="addSale(name, address)">Buy</button>
+    <button (click)="addSale(name, address, pname, paddress)">Buy</button>
 </div>

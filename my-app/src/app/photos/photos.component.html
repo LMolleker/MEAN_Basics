@@ -1,5 +1,7 @@
+<h3>Subí la tuya!</h3>
 <form action="http://localhost:8080/photos" method="post" enctype="multipart/form-data">
     <input type="file" id="myFile" name="photo">
-    <input type="submit" (click)="toggle($event)">
+    <input type="submit" value="Enviar" class="submit">
 </form>
-<img src="http://localhost:8080/images/O.jpg">
+<img *ngFor="let photo of arrPhotos" src="http://localhost:8080/images/{{photo.path}}" width="320" height="240" alt="">
+

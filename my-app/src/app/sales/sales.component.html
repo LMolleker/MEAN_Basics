@@ -1,7 +1,9 @@
+<h1>History of sales:</h1>
 <div *ngFor="let item of arrSales">
     <p>Client name: {{item.name}}</p>
-    <p>Client address{{item.address}}</p>
+    <p>Client address: {{item.address}}</p>
     <p>Total price: {{item.totalPrice}}</p>
+    <p>Items:</p>
     <ul *ngFor="let element of item.items">
         <li>Beer name: {{element.name}}</li>
         <li>Quantity: {{element.quantity}}</li>

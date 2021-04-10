@@ -11,10 +11,14 @@ import { RequestsService } from '../requests.service';
 
 export class PhotosComponent implements OnInit {
 
-  constructor(private photosService:RequestsService) { }
+  public arrPhotos:any;
+
+  constructor(private photosService:RequestsService) {
+    this.arrPhotos = [];
+  }
 
   ngOnInit(): void {
-    this.photosService.getPhotos().subscribe(data => console.log(data));
+    this.photosService.getPhotos().subscribe(data => this.arrPhotos = data);
   }
 
   public preventDefault(e:Event){

@@ -1,6 +1,60 @@
 .container{
-    margin-top: 5%;
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+h2{
+    width: 100%;
+    height: 7vh;
+    background-color:  #632100;
+    color: white;
+    text-align: center;
+}
+
+button{
+    width: 90%;
+    background-color: #BD3F00;
+    height: 5vh;
+    border-radius: 8px;
+    font-size: large;
+    color: white;
+    margin-top: 5%;
+}
+
+label{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 6%;
+}
+
+.container{
+    border: 1px solid #632100;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.5%;
+}
+
+.title{
+    width: 100%;
+    border-bottom: 1px solid #632100;
+}
+
+input{
+    border: solid black 1px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+ul{
+    margin-top: 5%;
+}
+
+p{
+    color: red;
 }
